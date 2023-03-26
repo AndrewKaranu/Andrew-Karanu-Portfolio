@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="CSS/locomotive.css">
+    <script src="https://use.fontawesome.com/your-embed-code.js"></script>
+    <title>Andrew Karanu Portfolio</title>
+</head>
+<body>
+
+<div class="scrollContainer">
+<!-- Header -->
+    <header class="header-area">
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <a href="#home"><img src="Images/Logo.png" width="100" height="100"></a>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projectscroll">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Landing page content -->
+    <div class="wrapper" id="home">
+        <div class="container">
+        <div class="main">
+            <span class="topline">Hi, my name is</span>
+            <h1>Andrew Karanu</h1>
+            <h1>I'm a <span class="multitext"></span></h1> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum repellat reprehenderit maxime fuga animi lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum repellat reprehenderit maxime fuga animi</p>
+            
+            <div class="btn"><a href="Images/Andrew Kamami Resume.pdf" download>Download CV</a></div>
+             
+        </div>
+        <div class="cols cols1"></div>
+    </div>
+    </div>
+
+    <!-- Social Links -->
+    
+    <div class="social-media-container">
+        <a href="https://github.com/AndrewKaranu" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/andrew-karanu-998910237/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <hr>
+      </div>
+
+    <!-- Email -->
+    <div class="email-container">
+       <a href="mailto:andrewkaranu03@gmail.com"><span class="email-text">andrewkaranu03@gmail.com</span></a> 
+        <hr>
+      </div>
+      
+    <!-- About Section -->
+    
+    <div id="about" class="about reveal">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat expedita minus rerum ullam cupiditate similique libero aliquid. Minus ad neque voluptatum dolores. Debitis officiis ad perferendis. Totam consectetur impedit labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ex assumenda dolore, sequi eius sed nemo non tempore dicta perspiciatis? Fugit omnis provident repellat incidunt quidem ex quam voluptatibus fuga!
+                    </p>
+                
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('tech-stack')">Tech Stack</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Python Development</span><br>Design and Development of Python Programs</li>
+                        <li><span>UI-UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="tech-stack">
+                    <p>I am proficient in the use of:</p>
+                    <ul>
+                        <li><img src="Images/python.svg" alt="stack"> <span>Python</span></li>
+                        <li><img src="Images/html.svg" alt="stack"> <span>HTML & css</span></li>
+                        <li><img src="Images/js.svg" alt="stack"> <span>Java Script</span></li>
+                        <li><img src="Images/java.svg" alt="stack"> <span>Java</span></li>
+                        <li><img src="Images/photoshop.svg" alt="stack"> <span>Photoshop</span></li>
+                        <li><img src="Images/illustrator.svg" alt="stack"> <span>Illustrator</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>School Name</span><br> Bachelors in Computer Science</li>
+                        <li><span>School Name</span><br>Web App Development</li>
+                        <li><span>School Name</span><br>Python Programming</li>
+                    </ul>
+                </div>
+                </div>
+            
+                <div class="about-col-2">
+                    <img src="Images/Myimage.jpg" alt="My Image">
+                </div>
+            </div>
+            <div class="about-heading">
+                
+            </div>
+            
+            
+        </div>
+    </div>
+    
+    <!-- Projects Section -->
+
+    <div id="projectscroll" class="my-work">
+        <div class="container">
+        <h1 class="sub">My Work</h1>
+        <div class="allprojects">
+        <div class="projectbuttons">
+            <p id="prev">Previous Project</p>
+            <p id="next">Next Project</p>
+            <i class="fas fa-arrow-left" id="prev-tab" onclick="prevTab()"></i>
+            <i class="fas fa-arrow-right" id="next-tab" onclick="nextTab()"></i>
+        </div>
+        <div class="projects active-proj" id="project-1">
+          <div class="project-images">
+            <img src="Images/projects/showcase.jpeg" alt="#" class="project1">
+          </div>
+          <div class="project-content" >
+            <div class="project-titles">
+              <h2 class="featured">Featured Project1</h2>
+              <h2 class="project">Project Title1</h2>
+            </div>
+            <div class="project-brief">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quisquam doloremque nostrum dolores blanditiis perferendis ipsa eum, ullam rem error iste qui aperiam commodi veniam vitae, placeat accusantium sapiente ducimus.</p>
+            </div>
+            <div class="project-stack">
+                <h1 class="stack-title">Technologies Used:</h1>
+                <ul>
+                    <li><i class="fab fa-html5"></i></li>
+                    <li><i class="fab fa-css3-alt"></i></li>
+                    <li><i class="fab fa-js"></i></li>
+                    <li><i class="fab fa-python"></i></li>
+                </ul>  
+            </div>
+            <div class="project-links">
+               <a href="https://github.com/AndrewKaranu" target="_blank"><button class="button-57" role="button"><span class="text">Project Demo</span><span><i class="fas fa-external-link-alt"></i></span></button></a> 
+               <a href="https://github.com/AndrewKaranu" target="_blank"><button class="button-57" role="button"><span class="text">Github Repository</span><span><i class="fab fa-github"></i></span></button></a> 
+            </div>
+          </div>
+        </div>
+
+        <div class="projects" id="project-2">
+          <div class="project-images">
+            <img src="Images/projects/fresh.png" alt="#" class="project1">
+          </div>
+          <div class="project-content">
+            <div class="project-titles">
+              <h2 class="featured">Featured Project2</h2>
+              <h2 class="project">Project Title2</h2>
+            </div>
+            <div class="project-brief">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quisquam doloremque nostrum dolores blanditiis perferendis ipsa eum, ullam rem error iste qui aperiam commodi veniam vitae, placeat accusantium sapiente ducimus.</p>
+            </div>
+            <div class="project-stack">
+                <h1 class="stack-title">Technologies Used:</h1>
+                <ul>
+                    <li><i class="fab fa-html5"></i></li>
+                    <li><i class="fab fa-css3-alt"></i></li>
+                    <li><i class="fab fa-js"></i></li>
+                    <li><i class="fab fa-python"></i></li>
+                </ul>  
+            </div>
+            <div class="project-links">
+               <a href="https://github.com/AndrewKaranu" target="_blank"><button class="button-57" role="button"><span class="text">Project Demo</span><span><i class="fas fa-external-link-alt"></i></span></button></a> 
+               <a href="https://github.com/AndrewKaranu" target="_blank"><button class="button-57" role="button"><span class="text">Github Repository</span><span><i class="fab fa-github"></i></span></button></a> 
+            </div>
+          </div>
+        
+        </div>
+
+        <div class="projects" id="project-3">
+          <div class="project-images">
+            <img src="Images/projects/showcase.jpeg" alt="#" class="project1">
+          </div>
+          <div class="project-content">
+            <div class="project-titles">
+              <h2 class="featured">Featured Project3</h2>
+              <h2 class="project">Project Title3</h2>
+            </div>
+            <div class="project-brief">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quisquam doloremque nostrum dolores blanditiis perferendis ipsa eum, ullam rem error iste qui aperiam commodi veniam vitae, placeat accusantium sapiente ducimus.</p>
+            </div>
+            <div class="project-stack">
+                <h1 class="stack-title">Technologies Used:</h1>
+                <ul>
+                    <li><i class="fab fa-html5"></i></li>
+                    <li><i class="fab fa-css3-alt"></i></li>
+                    <li><i class="fab fa-js"></i></li>
+                    <li><i class="fab fa-python"></i></li>
+                </ul>  
+            </div>
+            <div class="project-links">
+               <a href="https://github.com/AndrewKaranu" target="_blank"><button class="button-57" role="button"><span class="text">Project Demo</span><span><i class="fas fa-external-link-alt"></i></span></button></a> 
+               <a href="https://github.com/AndrewKaranu" target="_blank"><button class="button-57" role="button"><span class="text">Github Repository</span><span><i class="fab fa-github"></i></span></button></a> 
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+      </div>
+
+<!-- Contact Section -->
+<div id="contact">
+<div class="container">
+    <div class="row">
+        <div class="contact-left">
+            <h1 class="subtitle">Contact Me</h1>
+            <p><i class="fas fa-inbox"></i> andrewkaranu03@gmail.com</p>
+            <p><i class="fas fa-phone-alt"></i> +254746614278</p>
+            <div class="social-icons">
+                <a href="https://github.com/AndrewKaranu" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/andrew-karanu-998910237/" target="_blank"><i class="fab fa-linkedin"></i></a> 
+            </div>
+            <div class="containerbtn">
+                <div class="btn1"><a href="Images/Andrew Kamami Resume.pdf" download>Download CV</a></div>
+            </div> 
+        </div>
+        <div class="contact-right">
+            <form>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button class="button-53" role="button">Submit</button>
+            </form>
+        </div>
+        
+    </div>
+
+</div>
+
+</div>
+<div class="copyright">
+    <p>copyright © Andrew Karanu. Designed and Built by Andrew Karanu</p>
+</div>
+</div>
+      
+      
+
+<script>
+    const githubLogo = document.querySelector('.social-media-icons img[src="Images/icons/github-logo.png"]');
+    const githubLogoHover = 'Images/icons/github-logo2.png';
+    
+    githubLogo.addEventListener('mouseover', function() {
+      githubLogo.src = githubLogoHover;
+    });
+    
+    githubLogo.addEventListener('mouseout', function() {
+      githubLogo.src = 'Images/icons/github-logo.png';
+    });
+    </script>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+</script>
+
+<script>
+    var currentTab = 0;
+    var tabs = document.getElementsByClassName("projects");
+    
+    function showTab(index) {
+      // Hide all tabs
+      for (var i = 0; i < tabs.length; i++) {
+        tabs[i].classList.remove("active-proj");
+      }
+      // Show the selected tab
+      tabs[index].classList.add("active-proj");
+    }
+    
+    function prevTab() {
+      if (currentTab > 0) {
+        currentTab--;
+        showTab(currentTab);
+      }
+    }
+    
+    function nextTab() {
+      if (currentTab < tabs.length - 1) {
+        currentTab++;
+        showTab(currentTab);
+      }
+    }
+    
+      var currentTab = 0;
+var tabs = document.getElementsByClassName("projects");
+
+function showTab(index) {
+  // Hide all tabs
+  for (var i = 0; i < tabs.length; i++) {
+    tabs[i].classList.remove("active-proj");
+  }
+  // Show the selected tab
+  tabs[index].classList.add("active-proj");
+}
+
+function prevTab() {
+  if (currentTab > 0) {
+    currentTab--;
+    showTab(currentTab);
+  }
+}
+
+function nextTab() {
+  if (currentTab < tabs.length - 1) {
+    currentTab++;
+    showTab(currentTab);
+  }
+}
+
+showTab(0);
+
+</script>
+<script src="JS/index.js"></script>
+  
+<script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+<script>
+    var typingEffect =new Typed(".multitext", {
+    strings : ["web Developer", "Python Developer", "Java Developer"],
+    loop : true,
+    typeSpeed : 100,
+    backSpeed : 80,
+    backDelay :1500,
+})
+</script>
+
+<script src="JS/index.js"></script>
+
+
+</body>
+</html> 
